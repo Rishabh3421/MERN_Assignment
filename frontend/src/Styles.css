@@ -1,0 +1,400 @@
+/* styles.css */
+
+/* Form Style */
+.main{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #dadada;
+  width: 100vw;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.user{
+  text-align: center;
+}
+form{
+  min-width: 25%;
+  border-radius: 5%;
+  background:#FFFFFF;
+  padding: 70px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .btn1 {
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .btn1[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+  }
+  
+  .btn1:hover {
+    opacity: 0.9;
+  }
+
+  /* User List Styles */
+  .userContainer {
+    background: beige;
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+  }
+  
+  .userContainer > input {
+    width: 50%; /* Adjust width of search input */
+    padding: 15px 20px; /* Increase padding for better appearance */
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+  }
+  
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+  }
+  
+  .userCards {
+   height: auto;
+   background: #ffffff;
+   list-style: none;
+   padding: 20px;
+   width: 300px;
+   cursor: pointer;
+   transition: all ease-in-out .3s;
+   border-radius: 12px;
+   box-shadow: 3px 3px rgba(0, 0, 0, 0.884);
+   border: 2px solid black;
+   z-index: 2;
+  }
+  .userCards:hover{
+    scale: 1.1;
+  }
+  .userLogo {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 50px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .userLogo::before {
+    content: attr(data-first-letter);
+    color: #fff;
+  }
+  
+  .cardContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .cardContent>div>span{
+    font-weight: bold;
+  }
+  .cardContent>div{
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  .DeleteBtn{
+    margin: auto;
+    margin-top: 15px;
+    
+  }
+  .userCards > div {
+    margin-bottom: 8px; 
+  }
+  
+  .userCards > button {
+    margin-top: auto; 
+  }
+  
+  .userCards > button:first-child {
+    margin-right: 5px; 
+  }
+  .cardButtons{
+    display: flex;
+    gap: 10px;
+  }
+  .cardButtons>button{
+   cursor: pointer;
+  }
+  
+  .cardButtons>button:nth-child(1){
+    background: #3B3A3A;
+   font: bold;
+   color: whitesmoke;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 15px;
+  }
+  .cardButtons>button:nth-child(1):hover{
+   background: #3b3a3ad5;
+
+  }
+  .cardButtons>button:nth-child(2):hover{
+   background:rgba(57, 57, 225, 0.875);
+
+  }
+  .userDetailsLink{
+   background: #1B95FF;
+   font: bold;
+   color: whitesmoke;
+   border: none;
+   border-radius: 5px;
+   padding: 10px 15px;
+  }
+
+  .paginationBtn{
+    display: flex;
+    gap: 20px;
+  }
+  .paginationBtn>li{
+    list-style: none;
+  }
+  .paginationBtn>li>button{
+    border-radius: 100%;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    background: #3B3A3A;
+    border: none;
+    color: #fff;
+  }
+  .inputContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .inputContainer > input {
+    width: 50%; 
+    padding: 15px 20px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 10px;
+  }
+
+  .inputContainer>button{
+    background: #1B95FF;
+    font: bold;
+    color: whitesmoke;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    cursor: pointer;
+   }
+
+   /* User Details Styles */
+.Main{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: beige;
+}
+   .userDetails{
+    
+   }
+   .userCardDetail {
+    position: relative;
+    overflow: hidden;
+    min-height: 40vh;
+    width: 45vw; 
+    min-width: 50%;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjustments for screens smaller than 768px */
+    .userCardDetail {
+      width: 90vw; /* 90% of viewport width */
+      min-width: 40vw; /* Minimum width for smaller screens */
+    }
+  }
+  
+
+.userCardDetail>p{
+  font-family: sans-serif;
+font-size: 18px;
+letter-spacing: 2px;
+font-weight: 100;
+}
+.userCardDetail>p>span{
+font-size: 20px;
+font-weight: bold;
+}
+.userCardDetail>button{
+/* background: red; */
+padding: 10px 25px;
+color: #fff;
+border: none;
+border-radius: 25px;
+}
+
+.userCardDetail>.editBtn{
+  background: gray;
+}
+.userCardDetail>.editBtn:hover{
+  background: rgb(105, 104, 104);
+}
+.userCardDetail>.deleteBtn{
+  background: rgb(59, 58, 58);
+  margin-left: 10px;
+}
+.userCardDetail>.deleteBtn:hover{
+  background: rgb(50, 49, 49);
+  margin-left: 10px;
+}
+.cardDesign{
+  position: absolute;
+  right: 0%;
+  background: rgba(71, 56, 71, 0.843);
+  height: 100%;
+  min-width: 40%;
+  top: 0%;
+  border-radius: 16rem 0rem 0rem 16rem;
+  
+}
+.userCardDetail>button{
+  cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+  .cardDesign {
+    display: none;
+  }
+}
+
+/* UserDetailsForm.css */
+
+.updateForm {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  max-width: 500px; 
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f8f9fa; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-family: sans-serif;
+  text-align: left;
+  
+}
+
+.updateForm label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.updateForm input[type="text"],
+.updateForm input[type="date"],
+.updateForm input[type="email"],
+.updateForm textarea {
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.updateForm textarea {
+  height: 100px; 
+}
+
+.updateForm button {
+  background-color: #3B3A3A; 
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.updateForm button:nth-child(2){
+  margin-left: 10px;
+}
+.updateForm button:hover {
+  background-color: rgb(95, 90, 90); 
+}
+
+.Loader{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 7vw;
+  font-weight: 200;
+}
+
+.buttonGroup{
+  display: flex;
+  gap: 10px;
+}
+
+.buttonGroup>button:nth-child(1){
+  background: #3B3A3A;
+}
+.buttonGroup>button:nth-child(2){
+  background: gray;
+}
+
+.buttonGroup>button:nth-child(1):hover{
+  background: #3b3a3ad7;
+}
+.buttonGroup>button:nth-child(2):hover{
+  background: rgb(113, 111, 111);
+}
+
+.userListPageRedirect{
+  position: absolute;
+  top: 5%;
+  left: 2%;
+  border: none;
+  cursor: pointer;
+  color: #3B3A3A;
+  background: beige;
+}
+.userListPageRedirect:hover{
+  text-decoration: underline;
+}
